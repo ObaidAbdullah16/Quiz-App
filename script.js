@@ -3,8 +3,9 @@
 // ===================================
 
 // Google Gemini API endpoint - this is where we send requests to generate quiz questions
+// Google Gemini API endpoint - this is where we send requests to generate quiz questions
 const API_URL =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+  "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent";
 
 // ===================================
 // GLOBAL VARIABLES
