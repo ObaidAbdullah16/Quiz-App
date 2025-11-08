@@ -1,0 +1,162 @@
+/* ===================================
+   BODY AND CONTAINER
+   =================================== */
+
+/* Main body styling with purple gradient background */
+body {
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 100%
+  ); /* Purple gradient from top-left to bottom-right */
+  min-height: 100vh; /* At least full screen height (100vh = 100% of viewport height) */
+  padding: 20px 0; /* 20px space on top and bottom */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Nice, modern font */
+}
+
+/* Container limits the width of content */
+.container {
+  max-width: 800px; /* Content won't be wider than 800px */
+}
+
+/* ===================================
+   HEADER SECTION
+   =================================== */
+
+/* Header box styling */
+header {
+  background: white; /* White background */
+  padding: 30px; /* Space inside the box */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth effect */
+}
+
+/* Main title color */
+header h1 {
+  color: #667eea; /* Purple color matching our gradient */
+  font-weight: bold; /* Make it bold */
+}
+
+/* Subtitle styling */
+header .lead {
+  color: #666; /* Gray color */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* ===================================
+   CARD COMPONENTS
+   =================================== */
+
+/* All cards (boxes) styling */
+.card {
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Rounded corners */
+  background: white; /* White background */
+}
+
+/* Inside of cards */
+.card-body {
+  padding: 30px; /* Space inside the card */
+}
+
+/* ===================================
+   ANSWER BUTTONS
+   =================================== */
+
+/* Styling for all answer buttons */
+.answer-btn {
+  text-align: left; /* Align text to left (better for long answers) */
+  padding: 15px; /* Space inside button */
+  font-size: 16px; /* Text size */
+  transition: all 0.3s ease; /* Smooth animation when hovering (0.3 seconds) */
+}
+
+/* When user hovers mouse over button (but only if button is not disabled) */
+.answer-btn:hover:not(:disabled) {
+  transform: translateX(10px); /* Slide button 10px to the right */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* ===================================
+   TOPIC ALERT BOX
+   =================================== */
+
+/* The blue box that shows the topic */
+.alert-info {
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 100%
+  ); /* Purple gradient (same as body) */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* ===================================
+   SCORE DISPLAY
+   =================================== */
+
+/* The score number styling */
+#score {
+  color: #667eea; /* Purple color */
+  font-weight: bold; /* Make it bold */
+}
+
+/* ===================================
+   EXPLANATION BOX ANIMATION
+   =================================== */
+
+/* When explanation appears, it slides down smoothly */
+#explanationContainer {
+  animation: slideDown 0.3s ease; /* Use the 'slideDown' animation for 0.3 seconds */
+}
+
+/* Define the slideDown animation */
+@keyframes slideDown {
+  from {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Start 20px higher */
+  }
+  to {
+    opacity: 1; /* End fully visible */
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN FOR MOBILE
+   =================================== */
+
+/* On screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Less padding on sides */
+  }
+
+  header {
+    padding: 20px; /* Less padding in header */
+  }
+
+  .card-body {
+    padding: 20px; /* Less padding in cards */
+  }
+}
+
+/* ===================================
+   LOADING SPINNER
+   =================================== */
+
+/* The box around loading spinner */
+#loadingSpinner {
+  background: white; /* White background */
+  padding: 50px; /* Lots of space around spinner */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Size of the spinning circle */
+.spinner-border {
+  width: 3rem; /* 3rem = about 48px */
+  height: 3rem; /* 3rem = about 48px */
+}
