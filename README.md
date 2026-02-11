@@ -2,6 +2,8 @@
 
 A simple, beginner-friendly quiz application that uses Google Gemini AI to generate random quiz questions on various topics.
 
+### 🚀 Live Demo : http://quiz-app-obaid.s3-website.ap-south-1.amazonaws.com
+
 ## ✨ Features
 
 - 🎲 Random topic generation (History, Science, Sports, Movies, etc.)
